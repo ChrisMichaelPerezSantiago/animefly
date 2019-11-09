@@ -2,7 +2,7 @@
   <!-- START: Categories -->
   <div id="custom-nav" class="row vertical-gap">
     <div class="col-lg-4">
-      <router-link to="/">
+      <router-link :to="{name: 'home'}">
         <div class="nk-feature-1">
           <div class="nk-feature-icon">
             <i class="fab fa-phoenix-squadron"></i>
@@ -37,8 +37,8 @@
         </div>
       </router-link>
     </div>
-    <div class="col-lg-4" :to="{name: 'OvaList'}">
-      <router-link>
+    <div class="col-lg-4">
+      <router-link :to="{name: 'OvaList'}">
         <div class="nk-feature-1">
           <div class="nk-feature-icon">
             <i class="fab fa-phoenix-squadron"></i>
