@@ -18,7 +18,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -34,7 +34,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -50,7 +50,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -66,7 +66,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -82,7 +82,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -98,7 +98,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -114,7 +114,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -130,7 +130,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -146,7 +146,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -162,7 +162,7 @@ export const actions = {
             commit(type.IS_LOADING , false)
           }, 1000);
         }).catch((err) =>{
-          console.log(err)
+          
         })
       });
   },
@@ -174,7 +174,7 @@ export const actions = {
           commit(type.IS_LOADING , false)
         }, 1000);
       }).catch((err) =>{
-        console.log(err)
+        
       })
   }
 };

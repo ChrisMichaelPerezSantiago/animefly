@@ -151,7 +151,6 @@
           const allEpsVisible = data[0].map(x => x.episodes.slice(1))
           const ids = allEpsVisible.map(res => res.filter(doc => doc.episode === Number(eps)))
           const id = ids.map(x => x[0].id)[0];
-          console.log(id)
           store.value.dispatch('GET_VIDEO_ANIME' , id);
         }
       );

@@ -189,7 +189,6 @@
   
       watch(() =>
         sortBy.value.title , (value) =>{
-          console.log('sortby: ' , value)
           sortBy.value.title = value;
           const title = sortBy.value.title
           store.value.dispatch('GET_GENRES' , {
@@ -201,7 +200,6 @@
       );
   
       const init = (info) => {
-        console.log('a: ' , info)
         store.value.dispatch('GET_GENRES' , {
           genre: info.genre,
           sortBy: info.sortBy,
