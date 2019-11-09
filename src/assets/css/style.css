@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+  iframe {
+    height: 200px;
+    -moz-border-radius: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative
+  }
+}
+
+iframe {
+  -moz-border-radius: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative
+}
+
+@media (max-width: 750px) {
+  #custom-nav{
+    display: block !important;
+  }
+}
+
+#custom-nav{
+  display: none;
+}

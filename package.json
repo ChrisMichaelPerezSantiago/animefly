@@ -1,15 +1,62 @@
 {
   "name": "animefly",
   "version": "0.1.0",
+  "description": "Animefly is a platform that provides a wide catalog of anime with Spanish subtitles for free and excellent quality. You will be updated with all the best anime broadcast, soon to be released or already finished.",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "gh-publish": "vue-cli-service electron:build -p always",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "electron:generate-icons": "electron-icon-builder --input=./public/logo.png --output=build --flatten",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisMichaelPerezSantiago/animefly.git"
+  },
+  "keywords": [
+    "animefly",
+    "anime"
+  ],
+  "author": {
+    "name": "Chris Michael",
+    "email": "chrisperezsantiago1@gmail.com",
+    "url": "http://personal-porfolio.chrismichael.now.sh",
+    "social": {
+      "github": "https://github.com/ChrisMichaelPerezSantiago",
+      "twitter": "https://twitter.com/Chris5855M"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Chris Michael",
+      "url": "https://github.com/ChrisMichaelPerezSantiago",
+      "reason": "Project Leader, and Developer"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10.16.x",
+    "npm": ">= 6.9.x"
+  },
+  "main": "background.js",
   "dependencies": {
+    "@nano-sql/core": "^2.3.7",
+    "@u3u/vue-hooks": "^1.4.0",
+    "axios": "^0.19.0",
+    "bootstrap-vue": "^2.0.4",
     "core-js": "^3.3.2",
+    "css-loader": "^3.2.0",
+    "electron-icon-builder": "^1.0.1",
+    "electron-updater": "^4.2.0",
+    "lodash": "^4.17.15",
+    "postcss-loader": "^3.0.0",
     "vue": "^2.6.10",
+    "vue-function-api": "^2.2.0",
     "vue-router": "^3.1.3",
     "vuex": "^3.0.1"
   },
@@ -19,10 +66,12 @@
     "@vue/cli-service": "^4.0.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.3",
+    "electron": "^6.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
     "prettier": "^1.18.2",
+    "vue-cli-plugin-electron-builder": "^1.4.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
