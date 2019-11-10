@@ -1,5 +1,5 @@
 const type = require('./types');
-const axios = require('axios').default;
+const axios = require('axios');
 const nSQL = require('@nano-sql/core').nSQL;
 
 nSQL().useDatabase('animeflydb');
