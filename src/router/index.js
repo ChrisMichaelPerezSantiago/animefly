@@ -31,12 +31,12 @@ const routes = [
     component: VideoSection
   },
   {
-    path: "/EpisodeVideoSection/:_id",
+    path: "/EpisodeVideoSection/:id",
     name: "EpisodeVideoSection",
     component: EpisodeVideoSection
   },
   {
-    path: "/MovieVideoSection/:_id",
+    path: "/MovieVideoSection/:id",
     name: "MovieVideoSection",
     component: MovieVideoSection
   },
@@ -46,7 +46,7 @@ const routes = [
     component: ByGenre
   },
   {
-    path: "/GenreVideoSection/:_id",
+    path: "/GenreVideoSection/:id",
     name: "GenreVideoSection",
     component: GenreVideoSection
   },
@@ -61,7 +61,7 @@ const routes = [
     component: SpecialList
   },
   {
-    path: "/SpecialVideoSection/:_id",
+    path: "/SpecialVideoSection/:id",
     name: "SpecialVideoSection",
     component: SpecialVideoSection
   },
@@ -71,7 +71,7 @@ const routes = [
     component: OvaList
   },
   {
-    path: "/OvaVideoSection/:_id",
+    path: "/OvaVideoSection/:id",
     name: "OvaVideoSection",
     component: OvaVideoSection
   },
@@ -81,7 +81,7 @@ const routes = [
     component: TVList
   },
   {
-    path: "/TVListVideoSection/:_id",
+    path: "/TVListVideoSection/:id",
     name: "TVListVideoSection",
     component: TVListVideoSection
   },
@@ -91,12 +91,12 @@ const routes = [
     component: SearchAnime
   },
   {
-    path: "/SearchVideoSection/:_id",
+    path: "/SearchVideoSection/:id",
     name: "SearchVideoSection",
     component: SearchVideoSection
   },
   {
-    path: "/EmissionVideoSection/:_id",
+    path: "/EmissionVideoSection/:id",
     name: "EmissionVideoSection",
     component: EmissionVideoSection
   }
