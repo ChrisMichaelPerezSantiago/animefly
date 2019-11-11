@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link :to="{name: 'VideoSection' , params:{_id: anime._id , title: anime.title}}" class="nk-post-img">
+    <router-link :to="{name: 'VideoSection' , params:{id: anime.id , title: anime.title}}" class="nk-post-img">
       <img style="height:20em;" :src="anime.poster" :alt="anime.title">
       <span class="nk-post-comments-count">{{anime.rating}}</span>  
       <span class="nk-post-categories">

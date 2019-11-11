@@ -50,7 +50,7 @@
           <div class="nk-news-box-list">
             <div class="nano">
               <div class="nano-content">
-                <div class="nk-news-box-item"  v-for="anime in latestAnimeAdded.slice(0,  6)" :key="anime._id">
+                <div class="nk-news-box-item"  v-for="anime in latestAnimeAdded.slice(0,  6)" :key="anime.id">
                   <AnimeAddedTopSix :animes="anime"/>
                 </div>
               </div>
@@ -60,7 +60,7 @@
             <div class="nano">
               <router-link
                 style="text-decoration: none; color: #7f8b92; text-decoration: none; cursor:pointer;"
-                :to="{name: 'VideoSection' , params:{_id: latestAnimeAdded[0]._id , title: latestAnimeAdded[0].title}}"
+                :to="{name: 'VideoSection' , params:{id: latestAnimeAdded[0].id , title: latestAnimeAdded[0].title}}"
                 >
                 <div class="nano-content">
                   <div class="nk-news-box-item-image">
@@ -81,7 +81,7 @@
         <div class="nk-gap-2"></div>
         <div class="nk-blog-grid">
           <div class="row">
-            <div class="col-md-6 col-lg-3" v-for="anime in latestAnimeAdded" :key="anime._id">
+            <div class="col-md-6 col-lg-3" v-for="anime in latestAnimeAdded" :key="anime.id">
               <!-- START: Post -->
               <div class="nk-blog-post">
                 <LatestAnimeAdded :animes="anime"/>
@@ -99,7 +99,7 @@
             <div class="nk-gap"></div>
             <div class="nk-blog-grid">
               <div class="row">
-                <div class="col-md-6" v-for="anime in latestEpisodesAdded" :key="anime._id">
+                <div class="col-md-6" v-for="anime in latestEpisodesAdded" :key="anime.id">
                   <!-- START: Post -->
                   <div class="nk-blog-post">
                     <LatestEpisodesAdded :animes="anime"/>
@@ -123,7 +123,7 @@
             <h3 class="nk-decorated-h-2"><span><span class="text-main-1">Películas</span> destacadas</span></h3>
             <div class="nk-gap"></div>
             <div class="row vertical-gap">
-              <div class="col-md-6" v-for="movie in movies" :key="movie._id">
+              <div class="col-md-6" v-for="movie in movies" :key="movie.id">
                 <Movie :movies="movie"/>
               </div>
             </div>
@@ -132,12 +132,12 @@
             <aside class="nk-sidebar nk-sidebar-right nk-sidebar-sticky">
               <div class="nk-widget nk-widget-highlighted">
                 <h4 class="nk-widget-title"><span><span class="text-main-1">Próximos</span> capítulos</span></h4>
-                <div class="nk-widget-content" v-for="anime in inEmissionList" :key="anime._id">
+                <div class="nk-widget-content" v-for="anime in inEmissionList" :key="anime.id">
                   <div class="nk-widget-post">
                     <a class="nk-post-image">
                     <img :src="anime.poster.substr(20)" :alt="anime.title">
                     </a>
-                    <router-link :to="{name: 'EmissionVideoSection' , params:{_id: anime._id}}" class="nk-post-img">
+                    <router-link :to="{name: 'EmissionVideoSection' , params:{id: anime.id}}" class="nk-post-img">
                       <h3 class="nk-post-title"><a>{{anime.title}}</a></h3>
                     </router-link>
                     <div class="nk-post-date mt-10 mb-10">

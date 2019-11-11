@@ -6,7 +6,7 @@
     text-decoration: none;
     cursor:pointer;
     "
-    :to="{name: 'VideoSection' , params:{_id: anime._id , title: anime.title}}"
+    :to="{name: 'VideoSection' , params:{id: anime.id , title: anime.title}}"
     >
     <div class="nk-news-box-item-img">
       <img :src="anime.poster" :alt="anime.title">

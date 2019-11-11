@@ -2,11 +2,12 @@ const nSQL = require('@nano-sql/core').nSQL;
 
 nSQL().createDatabase({
   id: 'animeflydb',
-  model: 'PERM',
+  mode: 'PERM',
   tables: [
     {
       name: 'latestAnimeAdded',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},
@@ -23,6 +24,7 @@ nSQL().createDatabase({
     {
       name: 'latestEpisodesAdded',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "episode:number": {},
@@ -37,6 +39,7 @@ nSQL().createDatabase({
     {
       name: 'movies',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},
@@ -53,6 +56,7 @@ nSQL().createDatabase({
     {
       name: 'genres',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},
@@ -69,6 +73,7 @@ nSQL().createDatabase({
     {
       name: 'special',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},
@@ -85,6 +90,7 @@ nSQL().createDatabase({
     {
       name: 'ovas',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},
@@ -101,6 +107,7 @@ nSQL().createDatabase({
     {
       name: 'television',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},
@@ -117,6 +124,7 @@ nSQL().createDatabase({
     {
       name: 'searchAnime',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},
@@ -133,6 +141,7 @@ nSQL().createDatabase({
     {
       name: 'emissions',
       model:{
+        "id:int": {pk: true, ai: true},
         "title:string": {},
         "poster:string": {},
         "synopsis:string": {},

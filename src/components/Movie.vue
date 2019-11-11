@@ -12,7 +12,7 @@
       <div class="nk-gap-1"></div>
       <div class="nk-gap-1"></div>
       <router-link 
-        :to="{name: 'MovieVideoSection' , params:{_id: movie._id , title: movie.title}}"
+        :to="{name: 'MovieVideoSection' , params:{id: movie.id , title: movie.title}}"
         class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1"
         >
         ver

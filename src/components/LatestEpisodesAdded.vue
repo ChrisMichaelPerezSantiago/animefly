@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{name: 'EpisodeVideoSection' , params:{_id: anime._id}}" class="nk-post-img">
+  <router-link :to="{name: 'EpisodeVideoSection' , params:{id: anime.id}}" class="nk-post-img">
     <div class="nk-blog-post">
       <a class="nk-post-img">
       <img :src="anime.poster" alt="He made his passenger captain of one">

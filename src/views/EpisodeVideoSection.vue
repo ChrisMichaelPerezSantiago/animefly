@@ -57,7 +57,7 @@
             <div class="row vertical-gap">
               <div class="col-md-6"
                 v-for="movie in movies.slice([Math.floor(Math.random()*movies.length)]).slice(0 , 2)" 
-                :key="movie._id"
+                :key="movie.id"
               >
                 <div class="nk-product-cat">
                   <a>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="nk-gap-1"></div>
                  <router-link 
-                    :to="{name: 'MovieVideoSection' , params:{_id: movie._id , title: movie.title}}"
+                    :to="{name: 'MovieVideoSection' , params:{id: movie.id , title: movie.title}}"
                     class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1"
                     >
                     ver
@@ -92,7 +92,7 @@
                    <div 
                   class="nk-widget-post" 
                   v-for="anime in latestAnimeAdded.slice([Math.floor(Math.random()*latestAnimeAdded.length)]).slice(0 , 3)" 
-                  :key="anime._id"
+                  :key="anime.id"
                   >
                   <a class="nk-post-image">
                   <img :src="anime.poster" :alt="anime.title">
@@ -101,7 +101,7 @@
                   <div class="nk-product-rating"> <i class="fa fa-star"></i> {{anime.rating}}</div>
                   <div class="nk-gap-1"></div>
                   <router-link 
-                    :to="{name: 'VideoSection' , params:{_id: anime._id , title: anime.title}}"
+                    :to="{name: 'VideoSection' , params:{id: anime.id , title: anime.title}}"
                     class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1"
                     >
                     ver
@@ -146,14 +146,14 @@
   
       const anime = value([]);
       const params = {
-        _id: value(route.value.params._id),
+        id: value(route.value.params.id),
       };
   
       nSQL().useDatabase('animeflydb');
       nSQL('latestEpisodesAdded');
       nSQL()
         .query("select")
-        .where(["_id" , "=" , params._id.value])
+        .where(["id" , "=" , params.id.value])
         .exec()
         .then((rows) =>{
           anime.value.push(rows)

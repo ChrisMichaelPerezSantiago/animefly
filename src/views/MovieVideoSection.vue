@@ -77,7 +77,7 @@
                   <div 
                   class="nk-widget-post" 
                   v-for="anime in latestEpisodesAdded.slice([Math.floor(Math.random()*latestEpisodesAdded.length)]).slice(0 , 3)" 
-                  :key="anime._id"
+                  :key="anime.id"
                   >
                   <a class="nk-post-image">
                   <img :src="anime.poster" :alt="anime.title">
@@ -85,7 +85,7 @@
                   <h3 class="nk-post-title"><a>{{anime.title}}</a></h3>
                   <div class="nk-gap-1"></div>
                   <router-link 
-                    :to="{name: 'EpisodeVideoSection' , params:{_id: anime._id , title: anime.title}}"
+                    :to="{name: 'EpisodeVideoSection' , params:{id: anime.id , title: anime.title}}"
                     class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1"
                     >
                     ver
@@ -116,7 +116,7 @@
 
       const anime = value([]);
       const params = {
-        _id: value(route.value.params._id),
+        id: value(route.value.params.id),
         title: value(route.value.params.title)
       };
   
@@ -124,7 +124,7 @@
       nSQL('movies');
       nSQL()
         .query("select")
-        .where(["_id" , "=" , params._id.value])
+        .where(["id" , "=" , params.id.value])
         .exec()
         .then((rows) =>{
           anime.value.push(rows)

@@ -25,7 +25,7 @@
               <div class="tab-content">
                 <div class="tab-pane fade show active">
                   <div class="nk-gap"></div>
-                  <div class="nk-blog-post" v-for="anime in filteredDataObj" :key="anime._id">
+                  <div class="nk-blog-post" v-for="anime in filteredDataObj" :key="anime.id">
                     <div class="row vertical-gap">
                       <div class="col-lg-3 col-md-5">
                         <a class="nk-post-img">
@@ -35,7 +35,7 @@
                         </a>
                       </div>
                       <div class="col-lg-9 col-md-7">
-                        <router-link :to="{name: 'SearchVideoSection' , params:{_id: anime._id , title: anime.title}}" class="nk-post-img">
+                        <router-link :to="{name: 'SearchVideoSection' , params:{id: anime.id , title: anime.title}}" class="nk-post-img">
                           <h2 class="nk-post-title h4"><a>{{anime.title}}</a></h2>
                         </router-link>
                         <div class="nk-post-date mt-10 mb-10">
@@ -60,7 +60,7 @@
                   <div 
                     class="nk-widget-post" 
                     v-for="anime in latestAnimeAdded.slice([Math.floor(Math.random()*latestAnimeAdded.length)]).slice(0 , 3)" 
-                    :key="anime._id"
+                    :key="anime.id"
                     >
                     <a class="nk-post-image">
                     <img :src="anime.poster" :alt="anime.title">
@@ -69,7 +69,7 @@
                     <div class="nk-product-rating"> <i class="fa fa-star"></i> {{anime.rating}}</div>
                     <div class="nk-gap-1"></div>
                     <router-link 
-                      :to="{name: 'VideoSection' , params:{_id: anime._id , title: anime.title}}"
+                      :to="{name: 'VideoSection' , params:{id: anime.id , title: anime.title}}"
                       class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1"
                       >
                       ver
@@ -83,7 +83,7 @@
                   <div 
                     class="nk-widget-post" 
                     v-for="anime in latestEpisodesAdded.slice([Math.floor(Math.random()*latestEpisodesAdded.length)]).slice(0 , 3)" 
-                    :key="anime._id"
+                    :key="anime.id"
                     >
                     <a class="nk-post-image">
                     <img :src="anime.poster" :alt="anime.title">
@@ -91,7 +91,7 @@
                     <h3 class="nk-post-title"><a>{{anime.title}}</a></h3>
                     <div class="nk-gap-1"></div>
                     <router-link 
-                      :to="{name: 'EpisodeVideoSection' , params:{_id: anime._id , title: anime.title}}"
+                      :to="{name: 'EpisodeVideoSection' , params:{id: anime.id , title: anime.title}}"
                       class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1"
                       >
                       ver
@@ -105,7 +105,7 @@
                   <div 
                     class="nk-widget-post" 
                     v-for="movie in movies.slice([Math.floor(Math.random()*movies.length)]).slice(0 , 3)" 
-                    :key="movie._id"
+                    :key="movie.id"
                     >
                     <a class="nk-post-image">
                     <img :src="movie.poster.substr(20)" :alt="movie.title">
@@ -114,7 +114,7 @@
                     <div class="nk-product-rating"> <i class="fa fa-star"></i> {{movie.rating}}</div>
                     <div class="nk-gap-1"></div>
                     <router-link 
-                      :to="{name: 'MovieVideoSection' , params:{_id: movie._id , title: movie.title}}"
+                      :to="{name: 'MovieVideoSection' , params:{id: movie.id , title: movie.title}}"
                       class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1"
                       >
                       ver
