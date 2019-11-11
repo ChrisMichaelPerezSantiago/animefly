@@ -137,8 +137,6 @@
         id: value(route.value.params.id),
         title: value(route.value.params.title)
       };
-
-      console.log('params' , params.id.value)
   
       nSQL().useDatabase('animeflydb');
       nSQL('latestAnimeAdded');
@@ -147,7 +145,6 @@
         .where(["id" , "=" , params.id.value])
         .exec()
         .then((rows) =>{
-          console.log(rows)
           anime.value.push(rows)
         });
   
