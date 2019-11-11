@@ -3,6 +3,7 @@
 ![node version](https://img.shields.io/badge/node->=10.16.x-brightgreen.svg)
 ![npm version](https://img.shields.io/badge/npm->=6.9.x-brightgreen.svg)
 
+
 > Animefly is a platform that provides a wide catalog of anime with Spanish subtitles for free and excellent quality. You will be updated with all the best anime broadcast, soon to be released or already finished.
 
 ---
