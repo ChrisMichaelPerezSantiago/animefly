@@ -26,7 +26,7 @@
                     <div class="row vertical-gap">
                       <div class="col-lg-3 col-md-5">
                         <a class="nk-post-img">
-                        <img style="height:180px;" :src="anime.poster.substr(20)" :alt="anime.title">
+                        <img style="height:180px;" :src="anime.poster" :alt="anime.title">
                         <span class="nk-post-categories">
                         <span class="bg-main-1">{{genre}}</span>
                         </span>
@@ -116,7 +116,7 @@
                     :key="movie.id"
                     >
                     <a class="nk-post-image">
-                    <img :src="movie.poster.substr(20)" :alt="movie.title">
+                    <img :src="movie.poster" :alt="movie.title">
                     </a>
                     <h3 class="nk-post-title"><a>{{movie.title}}</a></h3>
                     <div class="nk-product-rating"> <i class="fa fa-star"></i> {{movie.rating}}</div>

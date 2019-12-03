@@ -97,7 +97,7 @@
                   :key="movie.id"
                   >
                   <a class="nk-post-image">
-                  <img :src="movie.poster.substr(20)" :alt="movie.title">
+                  <img :src="movie.poster" :alt="movie.title">
                   </a>
                   <h3 class="nk-post-title"><a>{{movie.title}}</a></h3>
                   <div class="nk-product-rating"> <i class="fa fa-star"></i> {{movie.rating}}</div>

@@ -66,7 +66,7 @@
                       border-radius:6px;
                       height:240px;
                     " 
-                    :src="movie.poster.substr(20)" :alt="movie.title">
+                    :src="movie.poster" :alt="movie.title">
                   </a>
                   <div class="nk-product-cont">
                     <h3 class="nk-product-title h5"><a>{{movie.title}}</a></h3>

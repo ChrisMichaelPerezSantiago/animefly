@@ -135,7 +135,7 @@
                 <div class="nk-widget-content" v-for="anime in inEmissionList" :key="anime.id">
                   <div class="nk-widget-post">
                     <a class="nk-post-image">
-                    <img :src="anime.poster.substr(20)" :alt="anime.title">
+                    <img :src="anime.poster" :alt="anime.title">
                     </a>
                     <router-link :to="{name: 'EmissionVideoSection' , params:{id: anime.id}}" class="nk-post-img">
                       <h3 class="nk-post-title"><a>{{anime.title}}</a></h3>

@@ -1,7 +1,7 @@
 <template>
   <div class="nk-product-cat">
     <a class="nk-product-image">
-    <img :src="movie.poster.substr(20)" :alt="movie.title">
+    <img :src="movie.poster" :alt="movie.title">
     </a>
     <div class="nk-product-cont">
       <h3 class="nk-product-title h5"><a>{{movie.title}}</a></h3>
