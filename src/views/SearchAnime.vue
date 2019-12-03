@@ -29,7 +29,7 @@
                     <div class="row vertical-gap">
                       <div class="col-lg-3 col-md-5">
                         <a class="nk-post-img">
-                        <img style="height:180px;" :src="anime.poster.substr(20)" :alt="anime.title">
+                        <img style="height:180px;" :src="anime.poster" :alt="anime.title">
                         <span class="nk-post-categories">
                         </span>
                         </a>
