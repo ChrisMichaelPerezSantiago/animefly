@@ -31,7 +31,7 @@
               </div>
               <div class="nk-gap-1"></div>
               <div class="nk-post-by">
-                <img src="https://cdn-html.nkdev.info/goodgames/assets/images/avatar-2.jpg" alt="Witch Murder" class="rounded-circle" width="35"> Por <a href="#">Animeflv</a>                        
+                <img src="https://html.nkdev.info/goodgames/assets/images/avatar-2.jpg" alt="anime" class="rounded-circle" width="35"> Por <a href="#">Animeflv</a>                        
                 <div class="nk-post-categories">
                   <span class="bg-main-0">
                     <select class="form-control" v-model="episode_selected">

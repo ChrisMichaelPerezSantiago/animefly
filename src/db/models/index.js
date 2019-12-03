@@ -1,8 +1,9 @@
 const nSQL = require('@nano-sql/core').nSQL;
 
+
 nSQL().createDatabase({
   id: 'animeflydb',
-  mode: 'PERM',
+  mode: "LS",
   tables: [
     {
       name: 'latestAnimeAdded',

@@ -117,8 +117,8 @@
       <div class="nk-gap-2"></div>
     </div>
     <!-- START: Page Background -->
-    <img class="nk-page-background-top" src="https://cdn-html.nkdev.info/goodgames/assets/images/bg-top-4.png" alt="">
-    <img class="nk-page-background-bottom" src="https://cdn-html.nkdev.info/goodgames/assets/images/bg-bottom.png" alt="">
+    <img class="nk-page-background-top" src="https://html.nkdev.info/goodgames/assets/images/bg-top-4.png" alt="">
+    <img class="nk-page-background-bottom" src="https://html.nkdev.info/goodgames/assets/images/bg-bottom.png" alt="">
     <!-- END: Page Background -->
     <!-- START: Search Modal -->
    
