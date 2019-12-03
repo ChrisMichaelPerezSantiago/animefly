@@ -1,6 +1,6 @@
 {
   "name": "animefly",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Animefly is a platform that provides a wide catalog of anime with Spanish subtitles for free and excellent quality. You will be updated with all the best anime broadcast, soon to be released or already finished.",
   "private": true,
   "scripts": {
