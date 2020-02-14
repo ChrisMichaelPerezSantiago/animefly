@@ -2,7 +2,7 @@
   <router-link :to="{name: 'EpisodeVideoSection' , params:{id: anime.id}}" class="nk-post-img">
     <div class="nk-blog-post">
       <a class="nk-post-img">
-      <img :src="anime.poster" alt="He made his passenger captain of one">
+      <img :src="`data:image/png;base64, ${anime.poster}`" :alt="anime.poster">
       <span class="nk-post-comments-count">EPS {{anime.episode}}</span>
       </a>
       <div class="nk-gap"></div>

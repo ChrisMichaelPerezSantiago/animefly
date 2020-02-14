@@ -58,7 +58,7 @@
                 <div class="nk-blockquote-author"><span>SINOPSIS</span></div>
               </blockquote>
               <div class="nk-gap"></div>
-              <img class="float-left mt-0 nk-post-img" height="200em" :src="anime[0][0].poster" :alt="anime[0][0].title">
+              <img class="float-left mt-0 nk-post-img" height="200em" :src="`data:image/png;base64, ${anime[0][0].poster}`"  :alt="anime[0][0].title">
               <h3 class="h4">{{anime[0][0].title}}</h3>
               <p>{{anime[0][0].synopsis.substr(12)}}</p>
               <div class="nk-gap"></div>
@@ -97,7 +97,7 @@
                   :key="movie.id"
                   >
                   <a class="nk-post-image">
-                  <img :src="movie.poster" :alt="movie.title">
+                  <img :src="`data:image/png;base64, ${anime.poster}`" :alt="movie.title">
                   </a>
                   <h3 class="nk-post-title"><a>{{movie.title}}</a></h3>
                   <div class="nk-product-rating"> <i class="fa fa-star"></i> {{movie.rating}}</div>

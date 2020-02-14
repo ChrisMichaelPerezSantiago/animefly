@@ -30,7 +30,7 @@
                   <div class="nk-popup-gallery">
                     <div class="nk-gallery-item-box">
                       <a>
-                        <img style="border-radius: 6px;" :src="anime[0][0].poster" :alt="anime[0][0].title">
+                        <img style="border-radius: 6px;" :src="`data:image/png;base64, ${anime[0][0].poster}`" :alt="anime[0][0].title">
                       </a>
                     </div>
                     <div class="nk-gap-1"></div>
@@ -66,7 +66,7 @@
                       border-radius:6px;
                       height:240px;
                     " 
-                    :src="movie.poster" :alt="movie.title">
+                    :src="`data:image/png;base64, ${movie.poster}`"  :alt="movie.title">
                   </a>
                   <div class="nk-product-cont">
                     <h3 class="nk-product-title h5"><a>{{movie.title}}</a></h3>
@@ -95,7 +95,7 @@
                   :key="anime.id"
                   >
                   <a class="nk-post-image">
-                  <img :src="anime.poster" :alt="anime.title">
+                  <img :src="`data:image/png;base64, ${anime.poster}`" :alt="anime.title">
                   </a>
                   <h3 class="nk-post-title"><a>{{anime.title}}</a></h3>
                   <div class="nk-product-rating"> <i class="fa fa-star"></i> {{anime.rating}}</div>

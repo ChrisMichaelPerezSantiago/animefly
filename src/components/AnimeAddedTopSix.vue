@@ -11,7 +11,7 @@
     <div class="nk-news-box-item-img">
       <img :src="anime.poster" :alt="anime.title">
     </div>
-    <img :src="anime.poster" :alt="anime.title" class="nk-news-box-item-full-img">
+    <img :src="`data:image/png;base64, ${anime.poster}`" :alt="anime.title" class="nk-news-box-item-full-img">
     <h3 class="nk-news-box-item-title">{{anime.title}}</h3>
     <span class="nk-news-box-item-categories">
     <span class="bg-main-4">{{anime.debut}}</span>
